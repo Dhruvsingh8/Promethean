@@ -7,6 +7,8 @@ import FAQ_Img from "../Images/FAQ.png";
 import Footer from "../Components/Footer";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import PromPageSchedule from "../Components/Schedule";
+import sponsor_logo from "../Images/mds logo.jpg";
+import { textAlign } from "@mui/system";
 import AOS from "aos";
 import sponsor_logo from "../Images/mds logo.jpg";
 import "aos/dist/aos.css";
@@ -58,7 +60,7 @@ const PromPageRect = styled.img`
   width: 250px;
   height: 300px;
   /* margin-left: 37px; */
-  margin-top: 10px;
+  margin-top: 100px;
   border-radius: 15px;
   @media ${(props) => props.theme.MediaQueries.m.query} {
     margin-right: 40px;
@@ -195,7 +197,7 @@ const Main = styled.div`
 `;
 
 const PromHero = styled.img`
-  width: 100%;
+  width: 80%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -294,22 +296,8 @@ const Promethean = () => {
         </div>
         {/* <PromPageHeadText>
           SCHE<PromHeadGreen>DULE</PromHeadGreen>
-        </PromPageHeadText> */}
-        {/* <PromPageSchedule></PromPageSchedule> */}
-        <PromPageHeadText>
-          OUR <PromHeadGreen>SPONSORS</PromHeadGreen>
         </PromPageHeadText>
-        <div style={{ textAlign: "center" }}>
-          <PromPageRect src={sponsor_logo}></PromPageRect>
-        </div>
-        <br />
-        <p style={{ textAlign: "center",color: "blue" }}>
-          <PromPagepara>
-            Looking for a boost in your business ? Time to get more online presence
-            with MDS Digital Media PVT LTD, To know more talk to our experts now
-            : 8789669927
-          </PromPagepara>
-        </p>
+        <PromPageSchedule></PromPageSchedule>
       </MainProm>
     </>
   );
